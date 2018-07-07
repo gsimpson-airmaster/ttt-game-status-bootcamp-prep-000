@@ -29,7 +29,7 @@ def over?(board)
   if(full?(board)) 
     return true 
   end
-  if(draw(board)) 
+  if(draw?(board)) 
     return true 
   end
   return false
