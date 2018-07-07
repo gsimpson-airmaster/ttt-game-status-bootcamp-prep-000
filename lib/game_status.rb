@@ -18,6 +18,17 @@ def full?(board)
   return (!((board.include?(" ")) || (board.include?(""))))
 end
 
+def draw?(board)
+  return (full?(board) && (!(won?(board))))
+  
+#  if (full?(board) && won?(board))
+#    return false
+#  elsif(full?(board) && (!(won?(board))))
+#    return true
+#  else
+#    return false
+#  end
+end
 
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
