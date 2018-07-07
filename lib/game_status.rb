@@ -20,15 +20,12 @@ end
 
 def draw?(board)
   return (full?(board) && (!(won?(board))))
-  
-#  if (full?(board) && won?(board))
-#    return false
-#  elsif(full?(board) && (!(won?(board))))
-#    return true
-#  else
-#    return false
-#  end
 end
+
+def over?(board)
+  return (won?(board) || full?(board) || draw(board))  
+end
+
 
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
